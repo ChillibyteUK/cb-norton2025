@@ -1,0 +1,41 @@
+.service-cards {
+    &__card {
+        height: 100%;
+        display: grid;
+        grid-template-areas: "stack";
+        isolation: isolate;
+        text-decoration: none;
+        &:hover .service-cards__image-wrapper img {
+            transform: scale(1.05);
+        }
+    }
+    &__image-wrapper {
+        grid-area: stack;
+        align-self: start;
+        z-index: -1;
+        width: 100%;
+        aspect-ratio: 4/3;
+        overflow: hidden;
+        img {
+            transition: transform 0.5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__overlay {
+        grid-area: stack;
+        align-self: stretch;
+        background: linear-gradient(to top,var(--col-navy) 20%,transparent 80%);
+        z-index: 0;
+    }
+    &__title {
+        grid-area: stack;
+        align-self: end;
+        color: var(--col-white);
+        font-size: var(--fs-400);
+        padding: 0 1rem 0.5rem 1rem;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+}

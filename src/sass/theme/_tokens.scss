@@ -1,0 +1,71 @@
+$col-primary: #1D0F44;
+$col-dark: #222222;
+$col-darkest: #4a4a4a;
+$col-light: #f2f2f2;
+
+:root {
+   /* =========================
+      COLOURS (HSL + computed)
+      ========================= */
+
+   --col-white-hsl: 0 0% 100%; /* #FFFFFF – pure white */
+   --col-white: hsl(var(--col-white-hsl));
+
+   --col-black-hsl: 256 63.9% 16.3%; /* #1A1938 – not pure black */
+   --col-black: hsl(var(--col-black-hsl));
+
+   --col-navy-hsl: 207 100% 10%;
+   --col-navy: hsl(var(--col-navy-hsl));
+   --col-grey-hsl: 0 0% 89%;
+   --col-grey: hsl(var(--col-grey-hsl));
+
+
+   /* =========================
+      TYPOGRAPHY (families/weights)
+      ========================= */
+   --ff-body:
+    "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+   --fw-bold: 600; /* Bold */
+   --fw-semi: 500; /* semi */
+   --fw-regular: 300; /* Light */
+
+   --lh-tight: 1.1;
+   --lh-snug: 1.25;
+   --lh-normal: 1.5;
+
+   /* =========================
+      TYPOGRAPHY (responsive sizes)
+      ========================= */
+
+  --fs-100: 0.778rem; /* 14px */
+  --fs-200: 0.889rem; /* 16px */
+  --fs-300: 1rem;     /* 18px */
+
+  /* fs-400: 1.222rem max → min = 1.222 × 0.82 = 1.00rem */
+  --fs-400: clamp(1.00rem, calc(0.92rem + 0.40vw), 1.222rem);
+
+  /* fs-500: 1.556rem max → min = 1.556 × 0.82 = 1.28rem */
+  --fs-500: clamp(1.28rem, calc(1.06rem + 0.75vw), 1.556rem);
+
+  /* fs-600: 1.944rem max → min = 1.944 × 0.82 = 1.59rem */
+  --fs-600: clamp(1.59rem, calc(1.28rem + 1.15vw), 1.944rem);
+
+  /* fs-700: 2.444rem max → min = 2.444 × 0.82 = 2.00rem */
+  --fs-700: clamp(2.00rem, calc(1.55rem + 1.72vw), 2.444rem);
+
+  /* fs-800: 3.056rem max → min = 3.056 × 0.82 = 2.51rem */
+  --fs-800: clamp(2.51rem, calc(1.80rem + 2.80vw), 3.056rem);
+
+  /* fs-900: 3.833rem max → min = 3.833 × 0.82 = 3.14rem */
+  --fs-900: clamp(3.14rem, calc(2.00rem + 4.00vw), 3.833rem);
+
+   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+   /* === Utilities === */
+   --transition: 250ms ease-out;
+
+   --h-top: 100px;
+   --h-top-desktop: 69px;
+}
