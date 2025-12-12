@@ -54,8 +54,8 @@
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   /* === Utilities === */
   --transition: 250ms ease-out;
-  --h-top: 100px;
-  --h-top-desktop: 69px;
+  --h-top: 72px;
+  --h-top-desktop: 72px;
 }
 
 :root {
@@ -113,8 +113,8 @@
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   /* === Utilities === */
   --transition: 250ms ease-out;
-  --h-top: 100px;
-  --h-top-desktop: 69px;
+  --h-top: 72px;
+  --h-top-desktop: 72px;
 }
 
 *,

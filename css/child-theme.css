@@ -54,8 +54,8 @@
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   /* === Utilities === */
   --transition: 250ms ease-out;
-  --h-top: 100px;
-  --h-top-desktop: 69px;
+  --h-top: 72px;
+  --h-top-desktop: 72px;
 }
 
 /*!
@@ -22029,6 +22029,7 @@ header .dropdown.current-menu-item > .nav-link {
 }
 .footer li {
   margin-bottom: 0.5rem;
+  list-style: none;
 }
 .footer li a {
   color: var(--col-white);
@@ -22040,7 +22041,12 @@ header .dropdown.current-menu-item > .nav-link {
 }
 .footer__menu {
   list-style: none;
+}
+.footer__menu ul {
   padding-inline-start: 0;
+}
+.footer__menu ul li {
+  list-style: none;
 }
 .footer__menu a {
   text-decoration: none;
