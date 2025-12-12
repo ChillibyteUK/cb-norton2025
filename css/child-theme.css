@@ -3,44 +3,54 @@
   /* =========================
      COLOURS (HSL + computed)
      ========================= */
-  --col-white-hsl: 0 0% 100%; /* #FFFFFF – pure white */
+  --col-white-hsl: 0 0% 100%;
+  /* #FFFFFF – pure white */
   --col-white: hsl(var(--col-white-hsl));
-  --col-black-hsl: 256 63.9% 16.3%; /* #1A1938 – not pure black */
+  --col-black-hsl: 256 63.9% 16.3%;
+  /* #1A1938 – not pure black */
   --col-black: hsl(var(--col-black-hsl));
   --col-navy-hsl: 207 100% 10%;
   --col-navy: hsl(var(--col-navy-hsl));
   --col-grey-hsl: 0 0% 89%;
   --col-grey: hsl(var(--col-grey-hsl));
+  --col-grey-900-hsl: 225 2% 51%;
+  --col-grey-900: hsl(var(--col-grey-900-hsl));
   /* =========================
      TYPOGRAPHY (families/weights)
      ========================= */
   --ff-body:
-   "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-   "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  --fw-bold: 600; /* Bold */
-  --fw-semi: 500; /* semi */
-  --fw-regular: 300; /* Light */
+     "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+     "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --fw-bold: 600;
+  /* Bold */
+  --fw-semi: 500;
+  /* semi */
+  --fw-regular: 300;
+  /* Light */
   --lh-tight: 1.1;
   --lh-snug: 1.25;
   --lh-normal: 1.5;
   /* =========================
      TYPOGRAPHY (responsive sizes)
      ========================= */
-  --fs-100: 0.778rem; /* 14px */
-  --fs-200: 0.889rem; /* 16px */
-  --fs-300: 1rem; /* 18px */
-  /* fs-400: 1.222rem max → min = 1.222 × 0.82 = 1.00rem */
-  --fs-400: clamp(1.00rem, calc(0.92rem + 0.40vw), 1.222rem);
-  /* fs-500: 1.556rem max → min = 1.556 × 0.82 = 1.28rem */
-  --fs-500: clamp(1.28rem, calc(1.06rem + 0.75vw), 1.556rem);
-  /* fs-600: 1.944rem max → min = 1.944 × 0.82 = 1.59rem */
-  --fs-600: clamp(1.59rem, calc(1.28rem + 1.15vw), 1.944rem);
-  /* fs-700: 2.444rem max → min = 2.444 × 0.82 = 2.00rem */
-  --fs-700: clamp(2.00rem, calc(1.55rem + 1.72vw), 2.444rem);
-  /* fs-800: 3.056rem max → min = 3.056 × 0.82 = 2.51rem */
-  --fs-800: clamp(2.51rem, calc(1.80rem + 2.80vw), 3.056rem);
-  /* fs-900: 3.833rem max → min = 3.833 × 0.82 = 3.14rem */
-  --fs-900: clamp(3.14rem, calc(2.00rem + 4.00vw), 3.833rem);
+  --fs-100: 0.778rem;
+  /* 14px */
+  --fs-200: 0.889rem;
+  /* 16px */
+  --fs-300: 1rem;
+  /* 18px */
+  /* 22px → 85% min */
+  --fs-400: clamp(1.04rem, calc(0.96rem + 0.40vw), 1.222rem);
+  /* 28px → 80% min */
+  --fs-500: clamp(1.25rem, calc(1.02rem + 0.85vw), 1.556rem);
+  /* 35px → 75% min */
+  --fs-600: clamp(1.46rem, calc(1.12rem + 1.45vw), 1.944rem);
+  /* 44px → 70% min */
+  --fs-700: clamp(1.71rem, calc(1.18rem + 2.20vw), 2.444rem);
+  /* 55px → 65% min */
+  --fs-800: clamp(1.99rem, calc(1.25rem + 3.60vw), 3.056rem);
+  /* 69px → 60% min */
+  --fs-900: clamp(2.30rem, calc(1.30rem + 5.50vw), 3.833rem);
   --text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   /* === Utilities === */
   --transition: 250ms ease-out;
@@ -21571,35 +21581,43 @@ readers do not read off random characters that represent icons */
 
 /* poppins-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v24-latin-300.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v24-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v24-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* poppins-300italic - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: italic;
   font-weight: 300;
-  src: url("../fonts/poppins-v24-latin-300italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v24-latin-300italic.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 :root {
   font-variant-ligatures: none;
@@ -21610,8 +21628,10 @@ readers do not read off random characters that represent icons */
    ========================= */
 /* Base */
 html {
-  font-size: 16px;
-} /* 16px */
+  font-size: 18px;
+}
+
+/* 16px */
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-300);
@@ -21623,18 +21643,21 @@ body {
   color: var(--col-black);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: var(--fs-900);
   font-weight: var(--fw-bold);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: var(--fs-700);
   font-weight: var(--fw-bold);
   margin-bottom: 1rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: var(--fs-500);
   font-weight: var(--fw-bold);
   margin-bottom: 0.75rem;
@@ -21707,6 +21730,8 @@ figure {
   font-weight: var(--fw-regular);
 }
 
+strong,
+b,
 .fw-semi {
   font-weight: var(--fw-semi);
 }
@@ -21836,12 +21861,13 @@ figure {
   --_bg: var(--col-grey);
   --_fg: var(--col-black);
   --_bd: var(--col-grey);
-  color: var(--_fg);
+  color: var(--_fg) !important;
   background: var(--_bg);
   border-color: var(--_bd);
 }
 .btn--primary::after {
-  content: "\f105"; /* FontAwesome angle right */
+  content: "\f105";
+  /* FontAwesome angle right */
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 1em;
@@ -22130,13 +22156,10 @@ header .dropdown.current-menu-item > .nav-link {
   line-height: var(--lh-snug);
 }
 
-.hero {
+.hero__image-wrapper {
   position: relative;
   overflow: hidden;
-  height: 75svh;
-  min-height: 75svh;
-  isolation: isolate;
-  color: var(--col-white);
+  height: 400px;
 }
 .hero__image {
   position: absolute;
@@ -22147,62 +22170,41 @@ header .dropdown.current-menu-item > .nav-link {
   -o-object-fit: cover;
   object-fit: cover;
 }
-.hero .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-}
-.hero .content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
-}
 .hero h1, .hero .h1 {
-  text-shadow: var(--text-shadow);
-  font-size: var(--fs-900);
-  line-height: var(--lh-tight);
-  letter-spacing: -0.05em;
+  color: var(--col-navy);
 }
-.hero .words {
-  font-size: var(--fs-500);
-  font-weight: var(--fw-500);
-  text-shadow: var(--text-shadow);
-  line-height: var(--lh-snug);
+.hero h1::after, .hero .h1::after {
+  content: ":";
+  color: var(--col-grey-900);
 }
-
-.hero-swoop {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 87px;
-  pointer-events: none;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5442.52 691.74" preserveAspectRatio="none"><path fill="%23fff" d="M5442.52,13.66v678.08H0V13.66h.14c531.28,225.67,1457.88,540.94,2650.11,553.05,1267.99,12.89,2250.62-323.09,2792.13-553.05h.14Z"/><path fill="%232198d5" d="M5442.52,13.6v57.87c-541.48,235.5-1524.17,579.64-2792.27,566.44C1457.92,625.5,531.26,302.58,0,71.47V13.6s.09.04.14.06c531.28,225.67,1457.88,540.94,2650.11,553.05,1267.99,12.89,2250.62-323.09,2792.13-553.05.05-.02.09-.04.14-.06Z"/><path fill="%231d1e1b" opacity=".69" d="M5442.52,0v14.92c-18.68,7.91-37.89,15.95-57.61,24.1-552.01,228.04-1510.31,540.11-2734.66,527.69C1504.5,555.09,604.06,264.16,64.06,41.69c-2.19-.91-4.38-1.81-6.57-2.71C37.84,30.86,18.68,22.83,0,14.92V0c12.8,4.93,25.83,9.9,39.09,14.92,536.98,203.24,1447.57,475.7,2611.16,486.42,1238.16,11.4,2204.23-278.69,2753.18-486.42,13.28-5.02,26.31-10,39.09-14.92Z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: bottom center;
+.hero h2, .hero .h2 {
+  color: var(--col-grey-900);
+  margin-bottom: 2rem;
 }
-@media (max-width: 1400px) {
-  .hero-swoop {
-    width: 100%;
-    background-size: 100% auto;
-  }
-}
-@media (min-width: 1401px) {
-  .hero-swoop {
-    background-size: 100% 100%;
-  }
+.hero__intro {
+  color: var(--col-grey-900);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi);
+  max-width: 90ch;
 }
 
-.hero-swoop--blue-900 {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5442.52 691.74' preserveAspectRatio='none'%3E%3Cpath fill='%231a1938' d='M5442.52,13.66v678.08H0V13.66h.14c531.28,225.67,1457.88,540.94,2650.11,553.05,1267.99,12.89,2250.62-323.09,2792.13-553.05h.14Z'/%3E%3Cpath fill='%232198d5' d='M5442.52,13.6v57.87c-541.48,235.5-1524.17,579.64-2792.27,566.44C1457.92,625.5,531.26,302.58,0,71.47V13.6s.09.04.14.06c531.28,225.67,1457.88,540.94,2650.11,553.05,1267.99,12.89,2250.62-323.09,2792.13-553.05.05-.02.09-.04.14-.06Z'/%3E%3Cpath fill='%231d1e1b' opacity='.69' d='M5442.52,0v14.92c-18.68,7.91-37.89,15.95-57.61,24.1-552.01,228.04-1510.31,540.11-2734.66,527.69C1504.5,555.09,604.06,264.16,64.06,41.69c-2.19-.91-4.38-1.81-6.57-2.71C37.84,30.86,18.68,22.83,0,14.92V0c12.8,4.93,25.83,9.9,39.09,14.92,536.98,203.24,1447.57,475.7,2611.16,486.42,1238.16,11.4,2204.23-278.69,2753.18-486.42,13.28-5.02,26.31-10,39.09-14.92Z'/%3E%3C/svg%3E");
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(8px);
+  }
+  30% {
+    transform: translateY(4px);
+  }
+}
+.down-arrow {
+  width: 40px;
+  height: 40px;
+  margin: 2rem auto 0;
+  display: block;
+  animation: bounce 1.5s ease-out infinite;
 }
 
 .service-cards__card {
@@ -22312,6 +22314,118 @@ header .dropdown.current-menu-item > .nav-link {
   z-index: -1;
 }
 
+.split {
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .split__text-column {
+    min-height: 600px;
+  }
+}
+.split .left-half,
+.split .right-half {
+  left: 50%;
+  margin-left: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+  padding: 0;
+}
+@media (min-width: 992px) {
+  .split .left-half {
+    padding-left: 0 !important;
+    position: absolute;
+    left: 0;
+    right: 50%;
+    margin-left: auto;
+    width: auto;
+  }
+  .split .right-half {
+    padding-right: 0 !important;
+    position: absolute;
+    right: 0;
+    left: 50%;
+    margin-left: auto;
+    width: auto;
+  }
+}
+.split__image {
+  overflow: hidden;
+  position: relative;
+  min-height: 300px;
+}
+@media (min-width: 992px) {
+  .split__image {
+    height: 100%;
+    min-height: 400px;
+  }
+}
+.split__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.faqs {
+  border-bottom: 1px solid var(--col-grey);
+}
+.faqs__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  row-gap: 0.5rem;
+}
+.faqs__question {
+  grid-row: 1;
+  grid-column: 2;
+}
+.faqs__answer {
+  grid-row: 2;
+  grid-column: 2;
+}
+.faqs__answer p {
+  margin-top: 0;
+}
+
+.accordion-button {
+  background-color: transparent;
+}
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: inherit;
+}
+.accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  transform: none !important;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important;
+  content: "−";
+}
+
+.accordion {
+  --bs-accordion-bg: transparent !important;
+}
+
 body {
   background-color: var(--col-white);
 }
@@ -22348,7 +22462,7 @@ body {
 a.anchor {
   display: block;
   position: relative;
-  top: -150px;
+  top: calc(var(--h-top-desktop) * -1);
   visibility: hidden;
 }
 
@@ -22366,6 +22480,10 @@ main {
 
 .form-control {
   border-radius: 0;
+}
+
+li {
+  list-style: square;
 }
 
 .has-blue-color,

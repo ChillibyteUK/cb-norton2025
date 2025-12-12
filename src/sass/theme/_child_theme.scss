@@ -20,10 +20,12 @@ body {
     columns: 2;
   }
 }
+
 @media (min-width: 992px) {
   .cols-lg-2 {
     columns: 2;
   }
+
   .cols-lg-3 {
     columns: 3;
   }
@@ -31,6 +33,7 @@ body {
 
 #breadcrumbs {
   font-size: var(--text-sm);
+
   a {
     text-decoration: none;
     font-weight: var(--fw-600);
@@ -39,20 +42,22 @@ body {
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: -150px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: calc(var(--h-top-desktop) * -1);
+  visibility: hidden;
 }
 
 .wp-block-group {
   &:not(.alignfull) {
     @extend .container;
+
     & .container {
       padding-inline: 0;
     }
   }
 }
+
 .container .container {
   padding-inline: 0;
 }
@@ -66,3 +71,6 @@ main {
   border-radius: 0;
 }
 
+li {
+  list-style: square;
+}

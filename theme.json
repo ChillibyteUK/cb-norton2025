@@ -32,6 +32,12 @@
           "slug": "grey",
           "color": "hsl(0 0% 89%)",
           "origin": "theme"
+        },
+        {
+          "name": "grey-900",
+          "slug": "grey-900",
+          "color": "hsl(225 2% 51%)",
+          "origin": "theme"
         }
       ]
     },
@@ -55,32 +61,32 @@
         {
           "name": "400",
           "slug": "400",
-          "size": "clamp(1.00rem, calc(0.92rem + 0.40vw), 1.222rem)"
+          "size": "clamp(1.04rem, calc(0.96rem + 0.40vw), 1.222rem)"
         },
         {
           "name": "500",
           "slug": "500",
-          "size": "clamp(1.28rem, calc(1.06rem + 0.75vw), 1.556rem)"
+          "size": "clamp(1.25rem, calc(1.02rem + 0.85vw), 1.556rem)"
         },
         {
           "name": "600",
           "slug": "600",
-          "size": "clamp(1.59rem, calc(1.28rem + 1.15vw), 1.944rem)"
+          "size": "clamp(1.46rem, calc(1.12rem + 1.45vw), 1.944rem)"
         },
         {
           "name": "700",
           "slug": "700",
-          "size": "clamp(2.00rem, calc(1.55rem + 1.72vw), 2.444rem)"
+          "size": "clamp(1.71rem, calc(1.18rem + 2.20vw), 2.444rem)"
         },
         {
           "name": "800",
           "slug": "800",
-          "size": "clamp(2.51rem, calc(1.80rem + 2.80vw), 3.056rem)"
+          "size": "clamp(1.99rem, calc(1.25rem + 3.60vw), 3.056rem)"
         },
         {
           "name": "900",
           "slug": "900",
-          "size": "clamp(3.14rem, calc(2.00rem + 4.00vw), 3.833rem)"
+          "size": "clamp(2.30rem, calc(1.30rem + 5.50vw), 3.833rem)"
         }
       ]
     }

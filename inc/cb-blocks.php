@@ -19,6 +19,45 @@ function acf_blocks() {
 
         acf_register_block_type(
             array(
+                'name'            => 'cb_faqs',
+                'title'           => __( 'CB FAQs' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'blocks/cb-faqs.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+                'name'            => 'cb_split_text_image',
+                'title'           => __( 'CB Split Text Image' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'blocks/cb-split-text-image.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+					'color'     => array(
+						'gradients'  => false,
+						'text'       => true,
+						'background' => true,
+					),
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
                 'name'            => 'cb_cta',
                 'title'           => __( 'CB CTA' ),
                 'category'        => 'layout',
@@ -75,23 +114,6 @@ function acf_blocks() {
                 'category'        => 'layout',
                 'icon'            => 'cover-image',
                 'render_template' => 'blocks/cb-service-cards.php',
-                'mode'            => 'edit',
-                'supports'        => array(
-                    'mode'      => false,
-                    'anchor'    => true,
-                    'className' => true,
-                    'align'     => true,
-                ),
-            )
-        );
-
-        acf_register_block_type(
-            array(
-                'name'            => 'cb_text_full-bleed_image',
-                'title'           => __( 'CB Text Full-Bleed Image' ),
-                'category'        => 'layout',
-                'icon'            => 'cover-image',
-                'render_template' => 'blocks/cb-text-full-bleed-image.php',
                 'mode'            => 'edit',
                 'supports'        => array(
                     'mode'      => false,

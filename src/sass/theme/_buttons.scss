@@ -51,12 +51,13 @@
   --_bg: var(--col-grey);
   --_fg: var(--col-black);
   --_bd: var(--col-grey);
-  color: var(--_fg);
+  color: var(--_fg) !important;
   background: var(--_bg);
   border-color: var(--_bd);
 
   &::after {
-    content: '\f105'; /* FontAwesome angle right */
+    content: '\f105';
+    /* FontAwesome angle right */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     font-size: 1em;
@@ -65,6 +66,7 @@
     transition: transform var(--btn-transition);
     will-change: transform;
   }
+
   &:hover {
     &::after {
       transform: translateX(4px);
@@ -87,8 +89,8 @@
 }
 
 /* Icon affordance (SVG or <i>) */
-.btn > svg,
-.btn > i {
+.btn>svg,
+.btn>i {
   inline-size: 1em;
   block-size: 1em;
 }
