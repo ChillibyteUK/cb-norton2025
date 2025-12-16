@@ -21927,6 +21927,9 @@ header #navbar {
 header .navbar-nav {
   margin-block: 0;
 }
+header li.menu-item {
+  list-style: none;
+}
 header a,
 header a.nav-link {
   color: var(--col-white);
@@ -22218,6 +22221,9 @@ header .dropdown.current-menu-item > .nav-link {
   display: grid;
   grid-template-areas: "stack";
   isolation: isolate;
+  text-decoration: none;
+}
+.service-cards__card:hover {
   text-decoration: none;
 }
 .service-cards__card:hover .service-cards__image-wrapper img {

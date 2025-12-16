@@ -5,8 +5,11 @@
         grid-template-areas: "stack";
         isolation: isolate;
         text-decoration: none;
-        &:hover .service-cards__image-wrapper img {
-            transform: scale(1.05);
+        &:hover {
+            text-decoration: none;
+            .service-cards__image-wrapper img {
+                transform: scale(1.05);
+            }
         }
     }
     &__image-wrapper {

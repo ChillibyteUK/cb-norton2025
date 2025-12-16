@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 
 require_once CB_THEME_DIR . '/inc/cb-utility.php';
 require_once CB_THEME_DIR . '/inc/cb-acf-theme-palette.php';
+require_once CB_THEME_DIR . '/inc/cb-block-usage.php';
 require_once CB_THEME_DIR . '/inc/cb-blocks.php';
 
 // Remove unwanted SVG filter injection WP (but keep global styles for utility classes).
