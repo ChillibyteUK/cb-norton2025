@@ -22030,9 +22030,12 @@ header .dropdown.current-menu-item > .nav-link {
   margin-bottom: 0.5rem;
   color: var(--col-blue-300);
 }
+.footer ul.footer__menu {
+  padding-inline-start: 0;
+}
 .footer li {
   margin-bottom: 0.5rem;
-  list-style: none;
+  list-style: none !important;
 }
 .footer li a {
   color: var(--col-white);
@@ -22494,8 +22497,15 @@ main {
   border-radius: 0;
 }
 
-li {
+ul:not(.fa-ul) > li {
   list-style: square;
+}
+
+.fa-ul > li {
+  margin-bottom: 0.5rem;
+}
+.fa-ul > li > a {
+  font-weight: var(--fw-semi);
 }
 
 .has-blue-color,
