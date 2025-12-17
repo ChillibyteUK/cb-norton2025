@@ -22409,6 +22409,9 @@ header .dropdown.current-menu-item > .nav-link {
   -o-object-fit: cover;
   object-fit: cover;
 }
+.split ul {
+  margin-bottom: 1rem;
+}
 
 .faqs {
   border-bottom: 1px solid var(--col-grey);
