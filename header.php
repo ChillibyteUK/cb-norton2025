@@ -108,8 +108,8 @@ do_action( 'wp_body_open' );
 ?>
 <div class="site" id="page">
     <header id="wrapper-navbar" class="fixed-top">
-        <nav id="navbar" class="navbar navbar-expand-lg d-block p-0 py-2" aria-label="Primary navigation">
-            <div class="container mb-2 d-block d-lg-flex gap-5">
+        <nav id="navbar" class="navbar navbar-expand-lg d-block p-0 py-3" aria-label="Primary navigation">
+            <div class="container d-block d-lg-flex gap-5">
                 <div class="d-flex w-lg-auto justify-content-between align-items-center px-2">
                     <a href="/" class="navbar-brand" rel="home" aria-label="Turnpower home"></a>
                     <button class="navbar-toggler input-button" id="navToggle" data-bs-toggle="collapse" data-bs-target=".navbars" type="button" aria-label="Navigation"><i class="fa fa-navicon"></i></button>
