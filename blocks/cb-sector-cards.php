@@ -20,9 +20,9 @@ $sectors      = get_children(
 
 if ( $sectors ) {
 	?>
-<section class="sector-cards py-5">
+<section class="sector-cards pt-4 mt-0 alignfull">
 	<div class="container">
-		<div class="row justify-content-center g-4">
+		<div class="row justify-content-center g-2">
 			<?php
 			foreach ( $sectors as $sector ) {
 				$sector_thumb_id = get_post_thumbnail_id( $sector->ID );

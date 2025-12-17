@@ -8,7 +8,7 @@
         text-decoration: none !important;   
         &:hover {
             .sector-cards__image-wrapper {
-                border-color: var(--col-navy);
+                border-color: inherit;
                 img {
                     transform: scale(1.05);
                 }
@@ -19,10 +19,10 @@
         }
     }
     &__image-wrapper {
-        width: 50%;
-        aspect-ratio: 1;
+        // width: 50%;
+        aspect-ratio: 4/3;
         overflow: hidden;
-        border-radius: 100vw;
+        // border-radius: 100vw;
         border-width: 3px;
         border-style: solid;
         border-color: transparent;
@@ -35,8 +35,8 @@
         }
     }
     &__title {
-        color: var(--col-navy);
-        font-size: var(--fs-400);
+        color: inherit;
+        font-size: var(--fs-300);
         padding: 0 1rem 0.5rem 1rem;
         margin-bottom: 0;
         text-align: center;

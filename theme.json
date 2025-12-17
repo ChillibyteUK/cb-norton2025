@@ -16,12 +16,6 @@
           "origin": "theme"
         },
         {
-          "name": "black",
-          "slug": "black",
-          "color": "hsl(256 63.9% 16.3%)",
-          "origin": "theme"
-        },
-        {
           "name": "navy",
           "slug": "navy",
           "color": "hsl(207 100% 10%)",
@@ -31,6 +25,12 @@
           "name": "grey",
           "slug": "grey",
           "color": "hsl(0 0% 89%)",
+          "origin": "theme"
+        },
+        {
+          "name": "black",
+          "slug": "black",
+          "color": "hsl(207 100% 10%)",
           "origin": "theme"
         },
         {

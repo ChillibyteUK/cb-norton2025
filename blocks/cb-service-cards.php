@@ -22,7 +22,7 @@ $classes = $block['className'] ?? 'py-5';
 
 if ( $services ) {
 	?>
-<section class="service-cards <?= esc_attr( $classes ); ?>">
+<section class="service-cards alignfull <?= esc_attr( $classes ); ?>">
 	<div class="container">
 		<div class="row justify-content-center g-4">
 			<?php

@@ -6,13 +6,13 @@
   --col-white-hsl: 0 0% 100%;
   /* #FFFFFF – pure white */
   --col-white: hsl(var(--col-white-hsl));
-  --col-black-hsl: 256 63.9% 16.3%;
-  /* #1A1938 – not pure black */
-  --col-black: hsl(var(--col-black-hsl));
   --col-navy-hsl: 207 100% 10%;
   --col-navy: hsl(var(--col-navy-hsl));
   --col-grey-hsl: 0 0% 89%;
   --col-grey: hsl(var(--col-grey-hsl));
+  --col-black-hsl: 256 63.9% 16.3%;
+  /* #1A1938 – not pure black */
+  --col-black: hsl(var(--col-navy-hsl));
   --col-grey-900-hsl: 225 2% 51%;
   --col-grey-900: hsl(var(--col-grey-900-hsl));
   --col-accent: #7fb069;
@@ -66,13 +66,13 @@
   --col-white-hsl: 0 0% 100%;
   /* #FFFFFF – pure white */
   --col-white: hsl(var(--col-white-hsl));
-  --col-black-hsl: 256 63.9% 16.3%;
-  /* #1A1938 – not pure black */
-  --col-black: hsl(var(--col-black-hsl));
   --col-navy-hsl: 207 100% 10%;
   --col-navy: hsl(var(--col-navy-hsl));
   --col-grey-hsl: 0 0% 89%;
   --col-grey: hsl(var(--col-grey-hsl));
+  --col-black-hsl: 256 63.9% 16.3%;
+  /* #1A1938 – not pure black */
+  --col-black: hsl(var(--col-navy-hsl));
   --col-grey-900-hsl: 225 2% 51%;
   --col-grey-900: hsl(var(--col-grey-900-hsl));
   --col-accent: #7fb069;
