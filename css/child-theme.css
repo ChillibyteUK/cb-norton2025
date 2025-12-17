@@ -22323,6 +22323,10 @@ header .dropdown.current-menu-item > .nav-link {
   text-align: center;
 }
 
+.accreditations img {
+  max-height: 115px;
+}
+
 .cta {
   position: relative;
   isolation: isolate;
