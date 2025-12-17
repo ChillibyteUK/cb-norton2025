@@ -21928,7 +21928,7 @@ header .navbar-nav {
   margin-block: 0;
 }
 header li.menu-item {
-  list-style: none;
+  list-style: none !important;
 }
 header a,
 header a.nav-link {

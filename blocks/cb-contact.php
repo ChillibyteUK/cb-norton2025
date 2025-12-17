@@ -19,7 +19,9 @@ defined( 'ABSPATH' ) || exit;
 				<ul class="fa-ul">
 					<li><span class="fa-li"><i class="fas fa-phone"></i></span> Call us on <?= do_shortcode( '[contact_phone]' ); ?></li>
 					<li><span class="fa-li"><i class="fas fa-envelope"></i></span> Email us at <?= do_shortcode( '[contact_email]' ); ?></li>
-					<li><span class="fa-li"><i class="fas fa-location-dot"></i></span> Find us at:<br><?= wp_kses_post( get_field( 'contact_address', 'option' ) ); ?></li>
+					<li class="mb-4"><span class="fa-li"><i class="fas fa-location-dot"></i></span> Find us at:<br><?= wp_kses_post( get_field( 'contact_address', 'option' ) ); ?></li>
+					<li><span class="fa-li"><i class="fas fa-hashtag"></i></span> Follow us on Social Media:
+					<?= do_shortcode( '[social_icons class="fa-2x"]' ); ?></li>
 				</ul>
 			</div>
 			<div class="col-lg-6">
