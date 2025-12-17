@@ -29,4 +29,28 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 		</div>
 	</div>
+	<div class="has-grey-background-color has-background py-5">
+		<div class="container">
+			<div class="d-md-none h2 text-center mb-4">Speak up in confidence</div>
+			<div class="row g-5">
+				<div class="col-md-4 d-flex align-items-center justify-content-center">
+					<a href="https://norton-mechanical.theitrustapp.com/" target="_blank" rel="noopener noreferrer">
+						<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-qr.png' ); ?>" alt="iTrust QR Code" width=245 height=245 />
+					</a>
+				</div>
+				<div class="col-md-8">
+					<h2 class="d-none d-md-block">Speak up in confidence</h2>
+					As part of our commitment to continual improvement we welcome your feedback. 
+
+					To do so please simply scan the QR code, you can do this anonymously too.
+					<ul>
+						<li>Report a Concern</li>
+						<li>Suggest a Change</li>
+						<li>Give Feedback</li>
+					</ul>
+					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-logo.png' ); ?>" alt="iTrust Logo" width=228 height=70 />
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

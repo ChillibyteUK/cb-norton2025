@@ -22250,6 +22250,21 @@ header .dropdown.current-menu-item > .nav-link {
   -o-object-fit: cover;
   object-fit: cover;
 }
+@media (min-width: 768px) {
+  .service-cards__card--wide .service-cards__image-wrapper {
+    aspect-ratio: 3/1;
+  }
+}
+@media (min-width: 992px) {
+  .service-cards__card--wide .service-cards__image-wrapper {
+    aspect-ratio: 4/1;
+  }
+}
+@media (min-width: 1200px) {
+  .service-cards__card--wide .service-cards__image-wrapper {
+    aspect-ratio: 6/1;
+  }
+}
 .service-cards__overlay {
   grid-area: stack;
   align-self: stretch;
@@ -22260,7 +22275,7 @@ header .dropdown.current-menu-item > .nav-link {
   grid-area: stack;
   align-self: end;
   color: var(--col-white);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   padding: 0 1rem 0.5rem 1rem;
   margin-bottom: 0;
   z-index: 1;
