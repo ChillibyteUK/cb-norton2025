@@ -38,6 +38,12 @@
           "slug": "grey-900",
           "color": "hsl(225 2% 51%)",
           "origin": "theme"
+        },
+        {
+          "name": "accent",
+          "slug": "accent",
+          "color": "#7fb069",
+          "origin": "theme"
         }
       ]
     },

@@ -15,6 +15,7 @@
   --col-grey: hsl(var(--col-grey-hsl));
   --col-grey-900-hsl: 225 2% 51%;
   --col-grey-900: hsl(var(--col-grey-900-hsl));
+  --col-accent: #7fb069;
   /* =========================
      TYPOGRAPHY (families/weights)
      ========================= */
@@ -21858,9 +21859,9 @@ b,
 
 /* Primary (accent) */
 .btn--primary {
-  --_bg: var(--col-grey);
-  --_fg: var(--col-black);
-  --_bd: var(--col-grey);
+  --_bg: var(--col-accent);
+  --_fg: var(--col-white);
+  --_bd: var(--col-accent);
   color: var(--_fg) !important;
   background: var(--_bg);
   border-color: var(--_bd);
@@ -22408,9 +22409,6 @@ header .dropdown.current-menu-item > .nav-link {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
-.split ul {
-  margin-bottom: 1rem;
 }
 
 .faqs {

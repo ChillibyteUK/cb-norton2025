@@ -48,9 +48,9 @@
 
 /* Primary (accent) */
 .btn--primary {
-  --_bg: var(--col-grey);
-  --_fg: var(--col-black);
-  --_bd: var(--col-grey);
+  --_bg: var(--col-accent);
+  --_fg: var(--col-white);
+  --_bd: var(--col-accent);
   color: var(--_fg) !important;
   background: var(--_bg);
   border-color: var(--_bd);
