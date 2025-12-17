@@ -21884,9 +21884,9 @@ b,
 .btn:hover, .gform_button:hover,
 .btn:active,
 .gform_button:active {
-  background: color-mix(in srgb, var(--col-grey), white 50%);
-  border-color: var(--col-grey);
-  color: var(--col-navy);
+  background: color-mix(in srgb, var(--_bg), white 50%);
+  border-color: var(--_bg);
+  color: var(--col-navy) !important;
 }
 
 /* Disabled */
