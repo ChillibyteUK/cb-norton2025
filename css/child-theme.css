@@ -22325,6 +22325,8 @@ header .dropdown.current-menu-item > .nav-link {
 
 .accreditations img {
   max-height: 115px;
+  max-width: 230px;
+  width: auto;
 }
 
 .cta {
