@@ -21953,6 +21953,9 @@ header a.nav-link:focus {
   color: var(--col-grey);
   text-decoration: none;
 }
+header a.dropdown-item {
+  font-size: var(--fs-300);
+}
 header .navbar-brand {
   background-image: url(../img/norton-logo.svg);
   background-size: contain;

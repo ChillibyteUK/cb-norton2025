@@ -48,6 +48,10 @@ header {
     }
   }
 
+  a.dropdown-item {
+    font-size: var(--fs-300);
+  }
+
   .navbar-brand {
     background-image: url(../img/norton-logo.svg);
     background-size: contain;
