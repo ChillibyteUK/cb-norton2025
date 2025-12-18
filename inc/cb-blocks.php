@@ -19,6 +19,40 @@ function acf_blocks() {
 
         acf_register_block_type(
             array(
+                'name'            => 'cs_index',
+                'title'           => __( 'cs index' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'blocks/cs-index.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
+                'name'            => 'cb_case_study_index',
+                'title'           => __( 'CB Case Study Index' ),
+                'category'        => 'layout',
+                'icon'            => 'cover-image',
+                'render_template' => 'blocks/cb-case-study-index.php',
+                'mode'            => 'edit',
+                'supports'        => array(
+                    'mode'      => false,
+                    'anchor'    => true,
+                    'className' => true,
+                    'align'     => true,
+                ),
+            )
+        );
+
+        acf_register_block_type(
+            array(
                 'name'            => 'cb_case_study_detail',
                 'title'           => __( 'CB Case Study Detail' ),
                 'category'        => 'layout',
