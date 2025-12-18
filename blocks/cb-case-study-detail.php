@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 		if ( get_field( 'cs_title' ) ) {
 			?>
-		<h2 class="h4"><?= esc_html( get_field( 'cs_title' ) ); ?></h2>
+		<h2 class="h4 mb-3"><?= esc_html( get_field( 'cs_title' ) ); ?></h2>
 			<?php
 		}
 		?>
