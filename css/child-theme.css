@@ -22194,10 +22194,12 @@ header .dropdown.current-menu-item > .nav-link {
   margin-bottom: 2rem;
 }
 .hero__intro {
-  color: var(--col-grey-900);
+  color: var(--col-navy);
   font-size: var(--fs-400);
   font-weight: var(--fw-semi);
   max-width: 90ch;
+  text-align: center;
+  margin-inline: auto;
 }
 
 @keyframes bounce {
