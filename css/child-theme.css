@@ -22496,6 +22496,28 @@ header .dropdown.current-menu-item > .nav-link {
   transform: scale(1.05);
 }
 
+.related-cs__item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background-color: var(--col-grey);
+  padding: 1.5rem;
+  height: 100%;
+  border: 4px solid transparent;
+  transition: border-color var(--transition);
+}
+.related-cs__item .h5 {
+  color: inherit;
+}
+.related-cs__item p {
+  color: inherit;
+  font-size: var(--fs-200);
+}
+.related-cs__item:hover {
+  text-decoration: none;
+  border-color: var(--col-navy);
+}
+
 body {
   background-color: var(--col-white);
 }
