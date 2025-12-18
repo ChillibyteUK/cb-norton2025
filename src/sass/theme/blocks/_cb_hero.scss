@@ -16,11 +16,6 @@
 
     h1 {
         color: var(--col-navy);
-
-        &::after {
-            content: ':';
-            color: var(--col-grey-900);
-        }
     }
 
     h2 {
