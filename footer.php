@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 				<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/norton-logo.svg' ); ?>" alt="Norton Mechanical Limited" class="footer-logo">
 			</div>
             <div class="col-12 col-md-3">
-				<div class="footer-title">Sectors</div>
+				<div class="footer-title">Services</div>
                 <?=
 				wp_nav_menu(
 					array(
@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 				?>
             </div>
             <div class="col-12 col-md-3">
-				<div class="footer-title">Services</div>
+				<div class="footer-title">Sectors</div>
                 <?=
 				wp_nav_menu(
 					array(
