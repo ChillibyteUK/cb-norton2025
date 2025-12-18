@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 	<?= wp_get_attachment_image( get_field( 'background' ), 'full', false, array( 'class' => 'background' ) ); ?>
 	<div class="overlay"></div>
 	<div class="content py-5">
-		<div class="container h-100 d-flex align-items-center">
+		<div class="container h-100 d-flex flex-column align-items-center">
 			<div class="row m-auto justify-content-center align-items-center">
 				<div class="col-lg-8 text-center">
 					<h1><?= esc_html( get_field( 'title' ) ); ?></h1>
@@ -41,6 +41,10 @@ defined( 'ABSPATH' ) || exit;
 					?>
 				</div>
 			</div>
+			<div class="align-content-center justify-content-end">
+				<a href="#content" class="down-arrow"><img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/norton-down-arrow.svg' ); ?>" alt="Down arrow"></a>
+			</div>
 		</div>
 	</div>
 </section>
+<a id="content" class="anchor"></a>
