@@ -1,6 +1,6 @@
 .home-hero {
     position: relative;
-    min-height: 100svh;
+    min-height: calc(100svh - var(--h-top));
     overflow: hidden;
     isolation: isolate;
     color: var(--col-white);

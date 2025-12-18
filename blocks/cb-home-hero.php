@@ -41,10 +41,10 @@ defined( 'ABSPATH' ) || exit;
 					?>
 				</div>
 			</div>
-			<div class="align-content-center justify-content-end">
-				<a href="#content" class="down-arrow"><img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/norton-down-arrow.svg' ); ?>" alt="Down arrow"></a>
-			</div>
 		</div>
+	</div>
+	<div class="position-absolute bottom-0 start-50 translate-middle-x pb-3">
+		<a href="#content" class="down-arrow"><img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/norton-down-arrow.svg' ); ?>" alt="Down arrow"></a>
 	</div>
 </section>
 <a id="content" class="anchor"></a>
