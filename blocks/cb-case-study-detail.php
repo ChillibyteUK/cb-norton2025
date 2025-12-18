@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <section class="cs-detail my-5 has-navy-background-color has-background has-white-color">
-	<div class="container py-4">
+	<div class="container py-5">
 		<?php
 		if ( get_field( 'cs_title' ) ) {
 			?>

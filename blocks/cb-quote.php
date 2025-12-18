@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <section class="quote my-5">
-	<div class="container py-4">
+	<div class="container py-5">
 		<div class="quote__quote">
 			<?= wp_kses_post( get_field( 'quote' ) ); ?>
 		</div>
