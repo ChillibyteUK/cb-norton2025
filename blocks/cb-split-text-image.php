@@ -42,7 +42,7 @@ $img = wp_get_attachment_image_url( get_field( 'image' ), 'full' ) ? wp_get_atta
                         $l = get_field( 'link' );
                     	?>
                         <a href="<?= esc_url( $l['url'] ); ?>"
-                            class="btn btn--primary mx-auto ms-md-0"
+                            class="btn btn--primary mx-auto mt-4 ms-md-0"
                             target="<?= esc_attr( $l['target'] ); ?>"><?= esc_html( $l['title'] ); ?></a>
                     	<?php
                     }
