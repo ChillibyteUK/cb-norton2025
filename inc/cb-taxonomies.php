@@ -35,6 +35,24 @@ function cb_register_taxes() {
         'show_in_rest'       => true,
         'rewrite'            => false,
     );
-    register_taxonomy( 'sectors', array( 'clients', 'testimonials' ), $args );
+    register_taxonomy( 'sectors', array( 'casestudy' ), $args );
+
+	$args = array(
+        'labels'             => array(
+            'name'          => 'Services',
+            'singular_name' => 'Service',
+        ),
+        'public'             => true,
+        'publicly_queryable' => true,
+        'hierarchical'       => true,
+        'show_ui'            => true,
+        'show_in_nav_menus'  => true,
+        'show_tagcloud'      => false,
+        'show_in_quick_edit' => true,
+        'show_admin_column'  => true,
+        'show_in_rest'       => true,
+        'rewrite'            => false,
+    );
+    register_taxonomy( 'services', array( 'casestudy' ), $args );
 }
 add_action( 'init', 'cb_register_taxes' );

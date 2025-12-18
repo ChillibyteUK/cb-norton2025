@@ -43,26 +43,9 @@ get_header();
 					<span><i class="fa-regular fa-clock"></i> <?= esc_html( estimate_reading_time_in_minutes( get_the_content() ) ); ?> minute read</span>
 				</div>
 				<?php
-				echo wp_kses_post( get_the_content() );
 
-				/*
-				?>
-				<div class="author_box mt-5 has-secondary-300-background-color p-4">
-					<div class="row">
-						<div class="col-md-2">
-							<?= wp_get_attachment_image( get_field( 'author_photo', 'option' ), 'medium', false, array( 'class' => 'img-fluid rounded-circle' ) ); ?>
-						</div>
-						<div class="col-md-10">
-							<h4 class="h3">About the Author</h4>
-							<?= wp_kses_post( get_field( 'author_bio', 'option' ) ); ?>
-						</div>
-					</div>
-				</div>
-
-				<?php
-
-				*/
-
+				the_content();
+				
 				$prev = get_previous_post();
 				$next = get_next_post();
 

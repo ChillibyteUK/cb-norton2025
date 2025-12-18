@@ -13,6 +13,8 @@ defined( 'ABSPATH' ) || exit;
 require_once CB_THEME_DIR . '/inc/cb-utility.php';
 require_once CB_THEME_DIR . '/inc/cb-acf-theme-palette.php';
 require_once CB_THEME_DIR . '/inc/cb-block-usage.php';
+require_once CB_THEME_DIR . '/inc/cb-posttypes.php';
+require_once CB_THEME_DIR . '/inc/cb-taxonomies.php';
 require_once CB_THEME_DIR . '/inc/cb-blocks.php';
 
 // Remove unwanted SVG filter injection WP (but keep global styles for utility classes).
@@ -166,22 +168,22 @@ function cb_dashboard_widget_display() {
     <?php
 }
 
-// phpcs:disable
-// add_filter('wpseo_breadcrumb_links', function( $links ) {
-//     global $post;
-//     if ( is_singular( 'post' ) ) {
-//         $t = get_the_category($post->ID);
-//         $breadcrumb[] = array(
-//             'url' => '/guides/',
-//             'text' => 'Guides',
-//         );
+add_filter(
+	'wpseo_breadcrumb_links',
+	function ( $links ) {
+		global $post;
+		if ( is_singular( 'casestudy' ) ) {
+			$t = get_the_category( $post->ID );
+			$breadcrumb[] = array(
+				'url'  => '/case-studies/',
+				'text' => 'Case Studies',
+			);
 
-//         array_splice( $links, 1, -2, $breadcrumb );
-//     }
-//     return $links;
-// }
-// );
-// phpcs:enable
+			array_splice( $links, 1, -2, $breadcrumb );
+		}
+		return $links;
+	}
+);
 
 
 /**

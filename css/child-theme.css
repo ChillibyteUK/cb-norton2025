@@ -22462,6 +22462,18 @@ header .dropdown.current-menu-item > .nav-link {
   --bs-accordion-bg: transparent !important;
 }
 
+.cs-detail__grid {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  position: relative;
+}
+.cs-detail__divider {
+  grid-column: 1/-1;
+  height: 1px;
+  background-color: var(--bs-border-color);
+}
+
 body {
   background-color: var(--col-white);
 }
