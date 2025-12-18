@@ -1,0 +1,14 @@
+.quote {
+    background-color: var(--col-grey);
+    color: var(--col-navy);
+    &__quote {
+        font-style: italic;
+        font-size: var(--fs-600);
+    }
+    &__attribution {
+        text-align: end;
+        margin-top: 1rem;
+        font-weight: var(--fw-600);
+        font-size: var(--fs-400);
+    }
+}

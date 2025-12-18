@@ -22518,6 +22518,21 @@ header .dropdown.current-menu-item > .nav-link {
   border-color: var(--col-navy);
 }
 
+.quote {
+  background-color: var(--col-grey);
+  color: var(--col-navy);
+}
+.quote__quote {
+  font-style: italic;
+  font-size: var(--fs-600);
+}
+.quote__attribution {
+  text-align: end;
+  margin-top: 1rem;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-400);
+}
+
 body {
   background-color: var(--col-white);
 }
