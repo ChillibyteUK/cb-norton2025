@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="content py-5">
 		<div class="container h-100 d-flex flex-column align-items-center">
 			<div class="row m-auto justify-content-center align-items-center">
-				<div class="col-lg-8 text-center">
+				<div class="col-lg-8 text-center mb-5">
 					<h1><?= esc_html( get_field( 'title' ) ); ?></h1>
 					<div class="words mb-4"><?= wp_kses_post( get_field( 'words' ) ); ?></div>
 				</div>
