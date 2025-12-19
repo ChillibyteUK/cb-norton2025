@@ -33,14 +33,14 @@ if ( $services ) {
 				$service_thumb    = $service_thumb_id ?
 					wp_get_attachment_image(
 						$service_thumb_id,
-						'medium',
+						'large',
 						false,
 						array( 'alt' => esc_attr( get_the_title( $service->ID ) ) )
 					) :
 					'<img src="' . get_stylesheet_directory_uri() . '/img/missing-image.png" alt="Placeholder image">';
 				$service_link     = get_permalink( $service->ID );
 				$cols             = $last_service_id === $service->ID ? 'col-md-12 col-lg-12 col-xl-6' : 'col-md-6 col-lg-6 col-xl-3';
-				$card_class       = $last_service_id === $service->ID ? 'service-cards__card--wide' : '';
+				$card_class       = $last_service_id === $service->ID ? 'service-cards__card--wide service-cards__card--last' : '';
 				?>
 			<div class="<?= esc_attr( $cols ); ?>">
 				<a href="<?= esc_url( $service_link ); ?>" class="service-cards__card h-100 <?= esc_attr( $card_class ); ?>">

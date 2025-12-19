@@ -22264,6 +22264,13 @@ header .dropdown.current-menu-item > .nav-link {
     aspect-ratio: 6/1;
   }
 }
+
+@media (min-width: 768px) {
+  .service-cards__card--last .service-cards__image-wrapper {
+    aspect-ratio: unset !important;
+    align-self: stretch;
+  }
+}
 .service-cards__overlay {
   grid-area: stack;
   align-self: stretch;
