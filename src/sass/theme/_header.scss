@@ -86,7 +86,7 @@ header {
       padding-right: 0;
     }
     .navbar-collapse {
-      background: var(--col-white);
+      // background: var(--col-white);
       min-height: 100svh;
       /* Do not set display:flex or height, let Bootstrap animate */
     }
@@ -100,10 +100,15 @@ header {
       font-weight: var(--fw-semi);
       padding: 0.75rem 1rem;
     }
+    a:hover {
+      color: var(--col-accent) !important;
+    }
     .dropdown-item {
       font-size: var(--fs-400);
     }
-
+    .fa-solid {
+      color: var(--col-accent);
+    }
     .fs-subtle a {
       font-size: var(--fs-400);
     }
