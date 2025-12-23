@@ -29,7 +29,7 @@ if ( $sectors ) {
 				$sector_thumb    = $sector_thumb_id ?
 					wp_get_attachment_image(
 						$sector_thumb_id,
-						'medium',
+						'large',
 						false,
 						array( 'alt' => esc_attr( get_the_title( $sector->ID ) ) )
 					) :

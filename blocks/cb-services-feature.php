@@ -56,7 +56,7 @@ if ( $services ) {
 						$service_thumb    = $service_thumb_id ?
 							wp_get_attachment_image(
 								$service_thumb_id,
-								'medium',
+								'large',
 								false,
 								array( 'alt' => esc_attr( get_the_title( $service->ID ) ) )
 							) :

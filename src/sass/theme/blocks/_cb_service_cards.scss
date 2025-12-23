@@ -5,13 +5,16 @@
         grid-template-areas: "stack";
         isolation: isolate;
         text-decoration: none;
+
         &:hover {
             text-decoration: none;
+
             .service-cards__image-wrapper img {
                 transform: scale(1.05);
             }
         }
     }
+
     &__image-wrapper {
         grid-area: stack;
         align-self: start;
@@ -19,6 +22,7 @@
         width: 100%;
         aspect-ratio: 4/3;
         overflow: hidden;
+
         img {
             transition: transform 0.5s ease;
             width: 100%;
@@ -26,25 +30,41 @@
             object-fit: cover;
         }
     }
+
     &__card--wide {
         .service-cards__image-wrapper {
             @media (min-width: 768px) {
                 aspect-ratio: 3/1;
             }
+
             @media (min-width: 992px) {
                 aspect-ratio: 4/1;
             }
+
             @media (min-width: 1200px) {
                 aspect-ratio: 6/1;
             }
         }
     }
+}
+
+.service-cards {
+    &__card--last {
+        .service-cards__image-wrapper {
+            @media (min-width: 768px) {
+                aspect-ratio: unset !important;
+                align-self: stretch;
+            }
+        }
+    }
+
     &__overlay {
         grid-area: stack;
         align-self: stretch;
-        background: linear-gradient(to top,var(--col-navy) 20%,transparent 80%);
+        background: linear-gradient(to top, var(--col-navy) 20%, transparent 80%);
         z-index: 0;
     }
+
     &__title {
         grid-area: stack;
         align-self: end;
