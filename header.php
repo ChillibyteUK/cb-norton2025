@@ -121,7 +121,7 @@ do_action( 'wp_body_open' );
 							'theme_location'  => 'primary_nav',
 							'container_class' => 'pt-2 px-0 p-lg-0 collapse navbar-collapse navbars w-100',
 							'container_id'    => 'primaryNav',
-							'menu_class'      => 'navbar-nav justify-content-end gap-md-5 w-100 align-items-lg-end mt-2 mt-lg-0',
+							'menu_class'      => 'navbar-nav justify-content-end gap-lg-5 w-100 align-items-lg-end mt-2 mt-lg-0',
 							'fallback_cb'     => '',
 							'menu_id'         => 'main-menu',
 							'depth'           => 2,
