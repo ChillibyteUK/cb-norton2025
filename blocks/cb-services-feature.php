@@ -15,6 +15,7 @@ $services      = get_children(
 		'posts_per_page' => -1,
 		'orderby'        => 'menu_order',
 		'order'          => 'ASC',
+		'post_status'    => 'publish',
 	)
 );
 
