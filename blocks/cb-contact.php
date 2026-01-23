@@ -34,8 +34,8 @@ defined( 'ABSPATH' ) || exit;
 			<div class="d-md-none h2 text-center mb-4">Speak up in confidence</div>
 			<div class="row g-5">
 				<div class="col-md-4 d-flex align-items-center justify-content-center">
-					<a href="https://norton-mechanical.theitrustapp.com/" target="_blank" rel="noopener noreferrer">
-						<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-qr.png' ); ?>" alt="iTrust QR Code" width=245 height=245 />
+					<a href="<?= esc_url( get_field( 'itrust_url', 'option' ) ); ?>" target="_blank" rel="noopener noreferrer">
+						<?= wp_get_attachment_image( get_field( 'itrust_qr', 'option' ), 'full', false, array( 'alt' => 'iTrust QR Code', 'width' => 245, 'height' => 245 ) ); ?>
 					</a>
 				</div>
 				<div class="col-md-8">
