@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 <section class="leadership">
 	<div class="container">
 
-		<div class="row g-5 py-5">
+		<div class="row g-5 py-5 justify-content-center">
 			<?php
 			while ( have_rows( 'people' ) ) {
 				the_row();
