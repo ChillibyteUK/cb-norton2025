@@ -186,6 +186,31 @@ add_shortcode(
 );
 
 add_shortcode(
+    'contact_email_2',
+    function ( $atts ) {
+        $atts = shortcode_atts(
+            array(
+                'class' => '',
+                'text'  => '',
+                'icon'  => false,
+            ),
+            $atts,
+            'contact_email_2'
+        );
+
+        if ( get_field( 'contact_email_2', 'option' ) ) {
+            $email       = get_field( 'contact_email_2', 'option' );
+            $icon_html   = $atts['icon'] ? '<i class="fa-solid fa-envelope"></i> ' : '';
+            $anchor_text = $icon_html . ( ! empty( $atts['text'] ) ? wp_kses_post( $atts['text'] ) : esc_html( $email ) );
+            $class       = esc_attr( $atts['class'] );
+
+            $obfuscated_email = antispambot( $email );
+            return '<a href="mailto:' . esc_attr( $obfuscated_email ) . '" class="' . $class . '">' . $anchor_text . '</a>';
+        }
+    }
+);
+
+add_shortcode(
 	'contact_email_icon',
 	function () {
         $email            = get_field( 'contact_email', 'option' );

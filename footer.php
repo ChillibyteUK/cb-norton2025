@@ -46,6 +46,7 @@ defined( 'ABSPATH' ) || exit;
 					<li><?= do_shortcode( '[contact_address]' ); ?></li>
 					<li>T: <?= do_shortcode( '[contact_phone]' ); ?></li>
 					<li>E: <?= do_shortcode( '[contact_email]' ); ?></li>
+					<li>E: <?= do_shortcode( '[contact_email_2]' ); ?></li>
 				</ul>
             </div>
         </div>

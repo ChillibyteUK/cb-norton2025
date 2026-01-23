@@ -42,6 +42,27 @@
             "append": ""
         },
         {
+            "key": "field_697378684352d",
+            "label": "Contact Email 2",
+            "name": "contact_email_2",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_683592671dde8",
             "label": "Contact Phone",
             "name": "contact_phone",
@@ -444,5 +465,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1769174884
+    "modified": 1769175152
 }
