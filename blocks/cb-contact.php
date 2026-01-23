@@ -43,8 +43,8 @@ defined( 'ABSPATH' ) || exit;
 							false,
 							array(
 								'alt'    => 'iTrust QR Code',
-								'width'  => 245,
-								'height' => 245,
+								'width'  => 122,
+								'height' => 122,
 							)
 						);
 						?>
