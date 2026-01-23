@@ -35,7 +35,18 @@ defined( 'ABSPATH' ) || exit;
 			<div class="row g-5">
 				<div class="col-md-4 d-flex align-items-center justify-content-center">
 					<a href="<?= esc_url( get_field( 'itrust_url', 'option' ) ); ?>" target="_blank" rel="noopener noreferrer">
-						<?= wp_get_attachment_image( get_field( 'itrust_qr', 'option' ), 'full', false, array( 'alt' => 'iTrust QR Code', 'width' => 245, 'height' => 245 ) ); ?>
+						<?=
+						wp_get_attachment_image(
+							get_field( 'itrust_qr', 'option' ),
+							'full',
+							false,
+							array(
+								'alt'    => 'iTrust QR Code',
+								'width'  => 245,
+								'height' => 245,
+							)
+						);
+						?>
 					</a>
 				</div>
 				<div class="col-md-8">
@@ -48,7 +59,7 @@ defined( 'ABSPATH' ) || exit;
 						<li>Suggest a Change</li>
 						<li>Give Feedback</li>
 					</ul>
-					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-logo.png' ); ?>" alt="iTrust Logo" width=228 height=70 />
+					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-logo.png' ); ?>" alt="iTrust Logo" width="228" height="70" />
 				</div>
 			</div>
 		</div>
