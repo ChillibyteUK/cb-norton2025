@@ -58,6 +58,10 @@ a.anchor {
   }
 }
 
+.wp-block-cover .wp-block-columns {
+  max-width: none !important;
+}
+
 .container .container {
   padding-inline: 0;
 }
@@ -71,13 +75,14 @@ main {
   border-radius: 0;
 }
 
-ul:not(.fa-ul) > li {
+ul:not(.fa-ul)>li {
   list-style: square;
 }
 
-.fa-ul > li {
+.fa-ul>li {
   margin-bottom: 0.5rem;
-  &  > a {
+
+  &>a {
     font-weight: var(--fw-semi);
   }
 }
