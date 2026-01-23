@@ -58,8 +58,12 @@ a.anchor {
   }
 }
 
-.wp-block-cover .wp-block-columns {
-  max-width: none !important;
+.wp-block-cover {
+  min-height: unset !important;
+
+  .wp-block-columns {
+    max-width: none !important;
+  }
 }
 
 .container .container {

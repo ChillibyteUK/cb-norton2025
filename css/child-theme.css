@@ -22606,6 +22606,9 @@ a.anchor {
   padding-inline: 0;
 }
 
+.wp-block-cover {
+  min-height: unset !important;
+}
 .wp-block-cover .wp-block-columns {
   max-width: none !important;
 }
