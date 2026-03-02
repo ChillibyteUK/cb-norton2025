@@ -14,7 +14,7 @@ $level     = get_field( 'level' ) ? get_field( 'level' ) : 'h2';
 
 // Extract custom classes (filter out wp-generated ones).
 $custom_classes = '';
-if ( $block['className'] ) {
+if ( isset( $block['className'] ) ) {
 	$class_array    = explode( ' ', $block['className'] );
 	$filtered       = array_filter(
 		$class_array,
