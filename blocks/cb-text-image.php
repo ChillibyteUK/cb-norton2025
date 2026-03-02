@@ -12,19 +12,7 @@ $col_order = get_field( 'order' ) ? get_field( 'order' ) : 'Text Image';
 $split     = get_field( 'split' ) ? get_field( 'split' ) : '50 50';
 $level     = get_field( 'level' ) ? get_field( 'level' ) : 'h2';
 
-// Extract custom classes (filter out wp-generated ones).
-$custom_classes = '';
-if ( $block['className'] ) {
-	$class_array    = explode( ' ', $block['className'] );
-	$filtered       = array_filter(
-		$class_array,
-		function ( $item ) {
-			return ! preg_match( '/^wp-/', $item );
-		}
-	);
-	$custom_classes = implode( ' ', $filtered );
-}
-$classes = $custom_classes ? $custom_classes : 'py-5';
+$classes = ! empty( $block['className'] ) ? $block['className'] : 'py-5';
 
 // Support Gutenberg color picker.
 $bg = ! empty( $block['backgroundColor'] ) ? 'has-' . $block['backgroundColor'] . '-background-color' : '';
@@ -78,7 +66,7 @@ $block_uid = 'text-image-' . uniqid();
 			<div class="<?= esc_attr( $text_col_width . ' ' . $text_order_class ); ?>" data-aos="fade">
 				<?php
 				if ( get_field( 'title' ) ) {
-					echo '<' . esc_attr( $heading_tag ) . ' class="has-700-font-size mb-4 ' . esc_attr( $dot ) . '">' . wp_kses_post( get_field( 'title' ) ) . '</' . esc_attr( $heading_tag ) . '>';
+					echo '<' . esc_attr( $heading_tag ) . ' class="has-700-font-size mb-4">' . wp_kses_post( get_field( 'title' ) ) . '</' . esc_attr( $heading_tag ) . '>';
 				}
 				?>
 				<div>

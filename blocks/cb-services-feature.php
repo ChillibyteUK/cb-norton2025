@@ -32,7 +32,7 @@ if ( $emergency_callout ) {
 	$services[] = $emergency_callout;
 }
 
-$classes = $block['className'] ? $block['className'] : 'py-5';
+$classes = ! empty( $block['className'] ) ? $block['className'] : 'py-5';
 
 if ( $services ) {
 	?>
