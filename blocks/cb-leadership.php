@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="col-md-4 text-center">
 				<?= wp_get_attachment_image( get_sub_field( 'image' ), 'large', false, array( 'alt' => esc_attr( get_sub_field( 'name' ) ), 'class' => 'img-fluid rounded-circle w-50' ) ); ?>
 				<h3 class="leadership__name has-400-font-size mt-3 mb-1"><?= esc_html( get_sub_field( 'name' ) ); ?></h3>
-				<div class="leadership__role mt-3 mb-1"><?= esc_html( get_sub_field( 'role' ) ); ?></div>
+				<div class="leadership__role mt-3 mb-1"><?= esc_html( get_sub_field( 'position' ) ); ?></div>
 				<div class="leadership__links d-flex justify-content-center align-items-center gap-4">
 				<?php
 				if ( get_sub_field( 'linkedin' ) ) {
