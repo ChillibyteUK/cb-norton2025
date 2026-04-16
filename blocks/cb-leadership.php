@@ -7,8 +7,14 @@
 
 defined( 'ABSPATH' ) || exit;
 
+$classes = $block['className'] ?? null;
+
+// Support Gutenberg color picker.
+$bg = ! empty( $block['backgroundColor'] ) ? 'has-' . $block['backgroundColor'] . '-background-color' : '';
+$fg = ! empty( $block['textColor'] ) ? 'has-' . $block['textColor'] . '-color' : '';
+
 ?>
-<section class="leadership">
+<section class="leadership <?= esc_attr( $bg . ' ' . $fg ); ?> <?= esc_attr( $classes ); ?>">
 	<div class="container">
 
 		<div class="row g-5 py-5 justify-content-center">
