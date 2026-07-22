@@ -53,7 +53,7 @@ defined( 'ABSPATH' ) || exit;
 
         <div class="colophon d-flex justify-content-between align-items-center flex-wrap">
             <div>
-                &copy; <?= esc_html( gmdate( 'Y' ) ); ?> Norton Mechanical Limited. Registered in England and Wales, number 06554447
+                &copy; <?= esc_html( gmdate( 'Y' ) ); ?> Norton Mechanical Limited. Registered in England and Wales, number 06554447 | VAT number GB 864 2766 93
             </div>
             <div>
 				<a href="/privacy-policy/">Privacy</a> & <a href="/cookie-policy/">Cookies</a> |
