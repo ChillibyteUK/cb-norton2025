@@ -87,7 +87,7 @@ defined( 'ABSPATH' ) || exit;
 				</div>
 				<div class="col-md-8">
 					<h2 class="d-none d-md-block">Once For All</h2>
-					Follow or click this QR code to see our full Constructionline Once For All SSIP Profile
+					<div class="mb-4">Follow or click this QR code to see our full Constructionline Once For All SSIP Profile</div>
 					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/once-for-all-logo.svg' ); ?>" alt="Once for All Logo" width="228" height="57" />
 				</div>
 			</div>
