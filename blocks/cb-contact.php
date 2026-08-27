@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <section class="contact">
-	<div class="container py-5">
+	<div class="container py-5 mb-5">
 		<div class="row g-5">
 			<div class="col-lg-6">
 				<div class="h1"><?= esc_html( get_field( 'title' ) ); ?></div>
@@ -61,6 +61,34 @@ defined( 'ABSPATH' ) || exit;
 						<li>Give Feedback</li>
 					</ul>
 					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/itrust-logo.png' ); ?>" alt="iTrust Logo" width="228" height="70" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="has-grey-background-color has-background py-5">
+		<div class="container">
+			<div class="d-md-none h2 text-center mb-4">Speak up in confidence</div>
+			<div class="row g-5">
+				<div class="col-md-4 d-flex align-items-center justify-content-center">
+					<a href="<?= esc_url( get_field( 'one_for_all_url', 'option' ) ); ?>" target="_blank" rel="noopener noreferrer">
+						<?=
+						wp_get_attachment_image(
+							get_field( 'one_for_all_qr', 'option' ),
+							'full',
+							false,
+							array(
+								'alt'    => 'Once for All QR Code',
+								'width'  => 122,
+								'height' => 122,
+							)
+						);
+						?>
+					</a>
+				</div>
+				<div class="col-md-8">
+					<h2 class="d-none d-md-block">Once For All</h2>
+					Follow or click this QR code to see our full Constructionline Once For All SSIP Profile
+					<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/once-for-all-logo.svg' ); ?>" alt="Once for All Logo" width="228" height="57" />
 				</div>
 			</div>
 		</div>
