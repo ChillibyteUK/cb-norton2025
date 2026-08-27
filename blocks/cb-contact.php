@@ -9,7 +9,7 @@ defined( 'ABSPATH' ) || exit;
 
 ?>
 <section class="contact">
-	<div class="container py-5 mb-5">
+	<div class="container py-5">
 		<div class="row g-5">
 			<div class="col-lg-6">
 				<div class="h1"><?= esc_html( get_field( 'title' ) ); ?></div>
@@ -30,7 +30,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 		</div>
 	</div>
-	<div class="has-grey-background-color has-background py-5">
+	<div class="has-grey-background-color has-background py-5 mb-4">
 		<div class="container">
 			<div class="d-md-none h2 text-center mb-4">Speak up in confidence</div>
 			<div class="row g-5">
@@ -65,7 +65,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 		</div>
 	</div>
-	<div class="has-grey-background-color has-background py-5">
+	<div class="has-grey-background-color has-background py-5 mb-5">
 		<div class="container">
 			<div class="d-md-none h2 text-center mb-4">Speak up in confidence</div>
 			<div class="row g-5">
